@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title> CALCULATOR APP</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../javascript/app.js"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <script src="javascript/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>
-        VERSTAILE CALCYLATOR
-    </h1>
+    <h1 class="heading_first">VERSTAILE CALCULATOR</h1>
+<div class="container">
+    <div>
+    <form action=""> 
+    <input type="text"  id="result" placeholder="Enter The Value" > 
+</form>
+</div>
+<div class="firs_btn">
+    <button id ="clears" class="first_btn fun"  onclick="settingclear()" >AC</button>
+    <button class="first_btn fun">X <sup>2</sup></button>
+    <button class="first_btn fun">X <sup>3</sup></button>
+    <button class="first_btn opr"  onclick="settingnumber('/')">/</button>
+</div>
+<div class="firs_btn">
+    <button class="first_btn color" onclick="settingnumber('7')">7</button>
+    <button class="first_btn color" onclick="settingnumber('8')">8</button>
+    <button class="first_btn color" onclick="settingnumber('9')">9</button>
+    <button class="first_btn opr"  onclick="settingnumber('*')">X</button>
+</div>
+<div class="sec_btn">
+    <button class="second_btn color"  onclick="settingnumber('4')">4</button>
+    <button class="second_btn color" onclick="settingnumber('5')">5</button>
+    <button class="second_btn color" onclick="settingnumber('6')">6</button>
+    <button class="second_btn opr" onclick="settingnumber('+')">+</button>
+</div>
+<div class="thir_btn">
+    <button class="third_btn color" onclick="settingnumber('1')">1</button>
+    <button class="third_btn color" onclick="settingnumber('2')">2</button>
+    <button class="third_btn color" onclick="settingnumber('3')">3</button>
+    <button class="third_btn opr" onclick="settingnumber('-')">-</button>
+</div>
+<div class="fou_btn">
+    <button class="fourth_btn color" onclick="settingnumber('0')">0</button>
+    <button class="fourthie_btn color" onclick="settingnumber('.')">.</button>
+    <button class="fourthie_btn opr1" onclick="settingresult()">=</button>
     
+</div>
+
+</div>    
 </body>
 </html>
